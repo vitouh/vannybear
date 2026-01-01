@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.container {
+  text-align: center;
+}
+
+.warning-text {
+  color: black;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#buttonSprite {
+  width: 160px; /* adjust if needed */
+  cursor: pointer;
+  user-select: none;
+}
