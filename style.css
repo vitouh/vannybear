@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "ArialNarrowCustom";
-  src: url("arialnarrow.ttf") format("truetype");
-  font-weight: normal;
+  font-family: "ArialNarrow";
+  src: url("./arialnarrow.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -24,10 +24,11 @@ body {
 }
 
 .warning-text {
-  font-family: "ArialNarrowCustom", Arial, sans-serif;
-  color: black;
+  font-family: "ArialNarrow" !important; /* FORCE IT */
   font-size: 18px;
+  color: black;
   margin-bottom: 20px;
+  letter-spacing: 0.2px; /* helps show narrowness */
 }
 
 #buttonSprite {
