@@ -1,8 +1,14 @@
+@font-face {
+  font-family: "ArialNarrowCustom";
+  src: url("arial-narrow.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -18,13 +24,14 @@ body {
 }
 
 .warning-text {
+  font-family: "ArialNarrowCustom", Arial, sans-serif;
   color: black;
   font-size: 18px;
   margin-bottom: 20px;
 }
 
 #buttonSprite {
-  width: 160px; /* adjust if needed */
+  width: 160px;
   cursor: pointer;
   user-select: none;
 }
