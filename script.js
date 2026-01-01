@@ -1,15 +1,12 @@
 const button = document.getElementById("buttonSprite");
-const video = document.getElementById("tvVideo");
+const audio = document.getElementById("audio");
 
 let clicked = false;
 
 button.addEventListener("click", () => {
-  if (clicked) return;
-
-  clicked = true;
-  button.src = "button-clicked.png";
-
-  video.style.opacity = 1;
-  video.muted = false;
-  video.play();
+  if (!clicked) {
+    button.src = "button-clicked.png";
+    audio.play();
+    clicked = true;
+  }
 });
