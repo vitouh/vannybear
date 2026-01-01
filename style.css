@@ -7,48 +7,24 @@
 
 body {
   height: 100vh;
-  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  background: white;
 }
 
-.center {
+.container {
   text-align: center;
 }
 
 .warning-text {
   color: black;
   font-size: 18px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 #buttonSprite {
-  width: 80px; /* small button */
+  width: 160px; /* adjust if needed */
   cursor: pointer;
-}
-
-/* TV positioning */
-.tv-container {
-  position: fixed;
-  bottom: 20px;
-  width: 220px; /* adjust to match your TV png */
-}
-
-.tv-frame {
-  width: 100%;
-  display: block;
-}
-
-/* Video inside TV */
-#tvVideo {
-  position: absolute;
-  top: 18%;
-  left: 12%;
-  width: 76%;
-  height: 55%;
-  object-fit: cover;
-  opacity: 0; /* invisible before click */
-  pointer-events: none;
+  user-select: none;
 }
